@@ -36,7 +36,6 @@
     </style>
 </head>
 <body onselectstart="return false">
-    <!--对话部分-->
     <canvas id="pinkboard"></canvas>
     <script>
         var settings = {
@@ -129,7 +128,6 @@
             };
             return Particle;
         })();
-        // ParticlePool class
         var ParticlePool = (function() {
             var particles,
                 firstActive = 0,
@@ -178,7 +176,6 @@
             };
             return ParticlePool;
         })();
-        // Putting it all together
         (function(canvas) {
             var context = canvas.getContext('2d'),
                 particles = new ParticlePool(settings.particles.length),
