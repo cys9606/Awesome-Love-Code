@@ -117,6 +117,7 @@
             requestAnimationFrame(animate);
         }
 
+        // 監聽畫布點擊事件來觸發煙火效果
         canvas.addEventListener('click', (e) => {
             const colors = [Math.floor(random(0, 255)), Math.floor(random(0, 255)), Math.floor(random(0, 255))];
             fireworks.push(new Firework(e.clientX, e.clientY, colors));
