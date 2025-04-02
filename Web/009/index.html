@@ -43,5 +43,12 @@
     </audio>
     <iframe id="iframMusic" allow="autoplay" style="display:none" src="blank.mp3"></iframe>
     <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".city").on("click", function() {
+                $("#moon").css("visibility", "visible");
+            });
+        });
+    </script>
 </body>
 </html>
