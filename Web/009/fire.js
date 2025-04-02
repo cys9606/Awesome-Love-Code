@@ -295,31 +295,4 @@ var focallength = 250;
 var Frag = function(centerX, centerY, radius, color, tx, ty) {
     this.tx = tx;
     this.ty = ty;
-    this.x = centerX;
-    this.y = centerY;
-    this.dead = false;
-    this.centerX = centerX;
-    this.centerY = centerY;
-    this.radius = radius;
-    this.color = color
-};
-Frag.prototype = {
-    paint: function() {
-        ctx.save();
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-        ctx.fillStyle = "rgba(" + this.color.a + "," + this.color.b + "," + this.color.c + ",1)";
-        ctx.fill();
-        ctx.restore()
-    },
-    moveTo: function(index) {
-        this.ty = this.ty + 0.3;
-        var dx = this.tx - this.x,
-            dy = this.ty - this.y;
-        this.x = Math.abs(dx) < 0.1 ? this.tx: (this.x + dx * 0.1);
-        this.y = Math.abs(dy) < 0.1 ? this.ty: (this.y + dy * 0.1);
-        if (dx === 0 && Math.abs(dy) <= 80) {
-            this.dead = true
-        }
-        this.paint()
-    }
+    this.x_* ▋
