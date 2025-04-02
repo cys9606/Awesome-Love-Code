@@ -5,11 +5,6 @@ var ctx = canvas.getContext("2d");
 ocas.width = canvas.width = window.innerWidth;
 ocas.height = canvas.height = window.innerHeight;
 var bigbooms = [];
-
-window.onload = function() {
-    initAnimate();
-};
-
 document.getElementById("iframMusic").onload = function(){
     var music = document.getElementById("music");
     music.src = 'music.mp3';
